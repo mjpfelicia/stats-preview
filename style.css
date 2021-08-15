@@ -1,0 +1,134 @@
+    body {
+        padding: 0px;
+        margin: 0px;
+        font-family: 'Lexend Deca';
+        background: hsl(233, 47%, 7%);
+    }
+    
+    .recipiente {
+        background: hsl(244, 38%, 16%);
+        height: 400px;
+        width: calc(100% - 80px);
+        margin: 40px;
+        border-radius: 10px;
+    }
+    
+    .recipiente__conteudo {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .conteudo__descricao,
+    .imagem {
+        width: 50%;
+        float: right;
+    }
+    
+    .conteudo__descricao {
+        background: hsl(244, 38%, 16%);
+        height: 100%;
+        text-align: center;
+    }
+    
+    .imagem {
+        background-image: url(./images/image-header-desktop.jpg);
+        background-size: cover;
+        height: 100%;
+    }
+    
+    .descricao__conteudo {
+        /* background: rosybrown;*/
+        height: calc(100% - 80px);
+        margin: 40px;
+        text-align: left;
+    }
+    
+    .titulo__descricao {
+        background: hsl(244, 38%, 16%);
+        color: white;
+        font-size: 35px;
+        font-family: 'Inter';
+        font-weight: bolder;
+    }
+    
+    .titulo__descricao span {
+        color: hsl(277, 64%, 61%);
+    }
+    
+    .descricao__detalhes {
+        background: hsl(244, 38%, 16%);
+        color: white;
+        font-size: 15px;
+        text-align: left;
+        margin: 40px 0px;
+    }
+    
+    .status__empresa {
+        background: hsl(244, 38%, 16%);
+        margin-top: 50px;
+        color: white;
+        font-size: 19px;
+        font-weight: 400;
+    }
+    
+    .status {
+        float: left;
+        width: 33%;
+        font-family: 'Inter';
+    }
+    
+    .numero {
+        font-family: 'Inter';
+        font-weight: 700;
+        font-size: 23px;
+        padding-bottom: 10px;
+    }
+    
+    .indicador {
+        font-size: 15px;
+    }
+    
+    .imagem__fundo {
+        height: 100%;
+        background-color: hsl(282, 61%, 40%);
+        opacity: 0.5;
+    }
+    
+    @media (max-width: 375px) {
+        .recipiente {
+            height: 730px;
+        }
+        .recipiente__conteudo {
+            width: 100%;
+        }
+        .imagem {
+            width: 100%;
+            height: 225px;
+            border-radius: 7px 7px 0px 0px;
+        }
+        .imagem__fundo {
+            border-radius: 7px 7px 0px 0px;
+        }
+        .conteudo__descricao {
+            width: 100%;
+            height: auto;
+        }
+        .titulo__descricao {
+            font-size: 20px;
+            text-align: center;
+        }
+        .descricao__detalhes {
+            font-size: 14px;
+            text-align: center;
+            margin: 30px 0px;
+        }
+        .status {
+            width: 100%;
+            text-align: center;
+            margin: 9px 0px;
+        }
+        .status__empresa {
+            margin-top: 0px;
+        }
+    }
